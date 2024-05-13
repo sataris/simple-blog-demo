@@ -1,0 +1,32 @@
+{
+    "name": "aris/simpledemoblog",
+    "description": "A simple blog application",
+    "require": {
+        "php": "8.2.*",
+      "ext-mysqli": "*",
+      "ext-pdo": "*",
+      "ext-gd": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.1",
+        "fakerphp/faker": "^1.23"
+    },
+    "authors": [
+        {
+            "name": "Aris Abramian",
+            "email": "aris.abramian@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SimpleDemoBlog\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SimpleDemoBlog\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable" : true
+}

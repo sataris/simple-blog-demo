@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true">
+    <!-- Define the test suites -->
+    <testsuites>
+        <testsuite name="Project Test Suite">
+            <!-- Assuming tests are in the tests/ folder at the root of your project -->
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+    <!-- Define php ini settings and other server variables -->
+    <php>
+        <ini name="error_reporting" value="-1" />
+        <env name="APP_ENV" value="test" force="true" />
+        <!-- ... other environment variables as needed ... -->
+    </php>
+    <!-- Configure code coverage generation -->
+    <coverage processUncoveredFiles="true">
+        <include>
+            <!-- Assuming sources are in the src/ folder at the root of your project -->
+            <directory suffix=".php">./src</directory>
+        </include>
+    </coverage>
+    <!-- Define how to log test results -->
+    <logging>
+        <log type="coverage-html" target="coverage_report" showUncoveredFiles="true"/>
+    </logging>
+</phpunit>

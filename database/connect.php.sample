@@ -1,0 +1,6 @@
+<?php
+// DB configuration
+$servername = "localhost"; // Change to your database host
+$username = "root"; // Change to your database username
+$password = "password"; // Change to your database password
+$dbname = "simple-blog";  // Change to your database name

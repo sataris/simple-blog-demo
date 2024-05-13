@@ -19,6 +19,7 @@ services:
       - app-network
     command: >
         bash -c "
+          composer install &&
           while !</dev/tcp/db/3306; do sleep 1; done
           php database/migration.php
           php-fpm"

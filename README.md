@@ -17,3 +17,7 @@ Simple Demo blog coded in PHP Core 8.2
 3. Run the migration 
    1. `php8.2 database/migration`
 4. Access the application
+
+## Test Cases
+
+1. Run ./vendor/bin/phpunit
